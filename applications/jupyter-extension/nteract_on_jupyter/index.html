@@ -10,7 +10,7 @@ Distributed under the terms of the Modified BSD License.
   <meta name="google" content="notranslate">
   <meta http-equiv="Content-Language" content="en">
 
-  <title>{% block title %}{{page_title}}{% endblock %}</title>
+  <title>{% block title %}Wisecube{% endblock %}</title>
 
   <script id="jupyter-config-data" type="application/json">{
     {% for key, value in page_config.items() -%}
@@ -25,7 +25,7 @@ Distributed under the terms of the Modified BSD License.
     "bookstore": {{ bookstore | tojson(indent=2) }}
   }</script>
 
-  {% block favicon %}<link rel="shortcut icon" type="image/x-icon" href="{{ base_url }}static/base/images/favicon.ico">{% endblock %}
+  {% block favicon %}<link rel="shortcut icon" type="image/x-icon" href="http://www.iconj.com/ico/6/c/6cf16l5i1c.ico">{% endblock %}
 
   {% for bundle_file in bundle_files %}
   <script src="{{ bundle_file }}" type="text/javascript" charset="utf-8"></script>

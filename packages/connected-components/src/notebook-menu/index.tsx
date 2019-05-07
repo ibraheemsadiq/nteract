@@ -307,7 +307,7 @@ class PureNotebookMenu extends React.Component<Props, State> {
           <SubMenu key={MENUS.FILE} title="File">
             <MenuItem>
               <a
-                href="/nteract/edit"
+                href="/wisecube/edit"
                 style={{
                   textDecoration: "none",
                   color: "currentColor"

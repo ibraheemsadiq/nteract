@@ -42,7 +42,7 @@ nteract_flags['dev'] = (
 class NteractApp(NotebookApp):
     """Application for runing nteract on a jupyter notebook server."""
 
-    default_url = Unicode('/nteract/edit', help="nteract's default starting location")
+    default_url = Unicode('/wisecube/edit', help="nteract's default starting location")
 
     classes = [*NotebookApp.classes, NteractConfig]
     flags = nteract_flags

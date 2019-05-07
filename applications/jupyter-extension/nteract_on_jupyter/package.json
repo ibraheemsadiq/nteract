@@ -4,11 +4,13 @@
   "description": "nteract on jupyter, as an extension",
   "main": "app/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "yarn run cross-env NODE_ENV=production webpack --watch --hot",
     "build:asap": "webpack",
-    "build:watch": "webpack --watch",
+    "build:watch": "yarn run webpack --watch",
     "dev": "concurrently \"npm run hot\" \"jupyter nteract --dev\"",
-    "hot": "webpack-dev-server --hot",
+    "client": "yarn run webpack-dev-server --hot",
+    "server": "jupyter-nteract --NteractConfig.asset_url=\"http://localhost:8080\"\n ",
+    "prod": "jupyter-nteract",
     "prepublishOnly": "echo it would be nice to npm run build once we are ready"
   },
   "publishConfig": {

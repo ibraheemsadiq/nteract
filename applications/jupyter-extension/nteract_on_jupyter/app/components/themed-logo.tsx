@@ -1,4 +1,5 @@
-import { WideLogo } from "@nteract/logos";
+
+
 import * as React from "react";
 
 interface ThemedLogoProps {
@@ -6,8 +7,14 @@ interface ThemedLogoProps {
   theme?: "light" | "dark";
 }
 
+const img = {
+  logo: 'https://i.ibb.co/DVW2Q8d/wisecube.png',
+  height: 25,
+  width: 30
+}
+
 const ThemedLogo = (props: ThemedLogoProps) => (
-  <WideLogo height={props.height} theme={props.theme} />
+  <img height={img.height} width={img.width} src={img.logo} alt="WiseCube" />
 );
 
 ThemedLogo.defaultProps = {

@@ -132,7 +132,7 @@ const makeMapStateToProps: any = (
     throw new Error("this component only works with jupyter apps");
   }
 
-  const appBase: string = urljoin(host.basePath, "/nteract/edit");
+  const appBase: string = urljoin(host.basePath, "/wisecube/edit");
 
   const mapStateToProps = (state: AppState): IContentsProps => {
     const contentRef: ContentRef = initialProps.contentRef;
@@ -199,7 +199,7 @@ const mapDispatchToProps = (
       KILL_KERNEL: () => dispatch(actions.killKernel({ restarting: false })),
       OPEN: () => {
         // On initialization, the appBase prop is not available.
-        const nteractEditUri = "/nteract/edit";
+        const nteractEditUri = "/wisecube/edit";
         const url = appBase ? urljoin(appBase, nteractEditUri) : nteractEditUri;
         window.open(url, "_blank");
       },
