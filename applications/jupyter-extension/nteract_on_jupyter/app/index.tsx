@@ -29,7 +29,7 @@ if (!rootEl || !dataEl) {
 } else {
   const config: JupyterConfigData = readConfig(rootEl, dataEl);
 
-  const webpackPublicPath = urljoin(config.assetUrl, "nteract/static/dist/");
+  const webpackPublicPath = urljoin(config.assetUrl, "wisecube/static/dist/");
   // Allow chunks from webpack to load from their built location
   // NOTE: This _must_ run synchronously before webpack tries to load other
   // chunks, and must be a free variable
