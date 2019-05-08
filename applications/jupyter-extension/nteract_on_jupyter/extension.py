@@ -30,7 +30,7 @@ def load_jupyter_server_extension(nbapp):
     # config.assets_dir = os.path.join(app_dir, 'static')
     config.assets_dir = app_dir
 
-    config.page_url = '/nteract'
+    config.page_url = '/wisecube'
     config.dev_mode = False
 
     # Check for core mode.
