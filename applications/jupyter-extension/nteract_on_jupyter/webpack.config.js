@@ -30,7 +30,7 @@ module.exports = {
   devServer: isProd
     ? {}
     : {
-        publicPath: "/nteract/static/dist/",
+        publicPath: "/wisecube/static/dist/",
         hot: true,
         headers: { "Access-Control-Allow-Origin": "*" }
       },
